@@ -13,7 +13,7 @@ app.use("/api", require("./api"));
 app.use(express.static(path.join(__dirname, "..", "public")));
 
 // sends index.html
-app.use("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "public/index.html"));
 });
 
