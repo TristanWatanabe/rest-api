@@ -53,7 +53,7 @@ router.get("/:id", async (req, res, next) => {
     next(error);
   }
 });
-
+//Fetches specific player's stats
 router.get("/:id/stats", async (req, res, next) => {
   try {
     const playerStats = await PlayerStats.findAll({
