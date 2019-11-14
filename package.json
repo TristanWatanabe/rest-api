@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/main.js",
+    "start": "node server",
     "seed": "node ./bin/seed"
   },
   "author": "",
